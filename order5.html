@@ -201,18 +201,6 @@ jQuery(function($){
 			<label><input type="radio" name="od_settle_case" value="KAKAOPAY"> KAKAOPAY</label>
 		</td>
 	</tr>
-	<tr>
-		<th scope="row">기타선택</th>
-		<td>
-			<label><input type="checkbox" name="od_taxbill" value="Y"> 세금계산서</label>
-			<label><input type="checkbox" name="od_taxsave" value="Y"> 현금영수증</label>
-			<label><input type="checkbox" name="od_memo" value="Y"> 배송메세지</label>
-			<label><input type="checkbox" name="od_shop_memo" value="Y"> 관리자메모</label>
-			<label><input type="checkbox" name="od_receipt_point" value="Y"> 포인트주문</label>
-			<label><input type="checkbox" name="od_coupon" value="Y"> 쿠폰할인</label>
-			<label><input type="checkbox" name="od_escrow" value="Y"> 에스크로</label>
-		</td>
-	</tr>
 	</tbody>
 	</table>
 </div>
@@ -268,11 +256,9 @@ jQuery(function($){
 		<th scope="col">주문번호</th>
 		<th scope="col"><input type="checkbox" id="sit_select_all"></th>
 		<th scope="col" colspan="3">주문상품</th>
-		<th scope="col">판매자</th>
-		<th scope="col">배송회사</th>
-		<th scope="col">운송장번호</th>
+		<th scope="col" colspan="2">배송회사</th>
+		<th scope="col" colspan="2">운송장번호</th>
 		<th scope="col">배송조회</th>
-		<th scope="col">가맹점</th>
 		<th scope="col">주문자</th>
 		<th scope="col">수령자</th>
 		<th scope="col">총주문액</th>
@@ -282,11 +268,6 @@ jQuery(function($){
 	<tr><td colspan="15" class="empty_table">자료가 없습니다.</td></tr>	</tbody>
 	</table>
 </div>
-<div class="local_frm02">
-	<input type="submit" name="act_button" value="운송장번호수정" class="btn_lsmall white" onclick="document.pressed=this.value">
-<a href="#" id="frmOrderPrint" class="btn_lsmall white"><i class="fa fa-print"></i> 주문서출력</a>
-<a href="#" id="frmOrderExcel" class="btn_lsmall white"><i class="fa fa-file-excel-o"></i> 선택 엑셀저장</a>
-<a href="./order/order_excel.php?code=4" class="btn_lsmall white"><i class="fa fa-file-excel-o"></i> 검색결과 엑셀저장</a></div>
 
 <h2>주문 일괄처리</h2>
 <div class="tbl_frm01">

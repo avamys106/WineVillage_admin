@@ -211,18 +211,6 @@ jQuery(function($){
 			<label><input type="radio" name="od_final" value="0"> 구매미확정</label>
 		</td>
 	</tr>
-	<tr>
-		<th scope="row">기타선택</th>
-		<td>
-			<label><input type="checkbox" name="od_taxbill" value="Y"> 세금계산서</label>
-			<label><input type="checkbox" name="od_taxsave" value="Y"> 현금영수증</label>
-			<label><input type="checkbox" name="od_memo" value="Y"> 배송메세지</label>
-			<label><input type="checkbox" name="od_shop_memo" value="Y"> 관리자메모</label>
-			<label><input type="checkbox" name="od_receipt_point" value="Y"> 포인트주문</label>
-			<label><input type="checkbox" name="od_coupon" value="Y"> 쿠폰할인</label>
-			<label><input type="checkbox" name="od_escrow" value="Y"> 에스크로</label>
-		</td>
-	</tr>
 	</tbody>
 	</table>
 </div>
@@ -276,8 +264,7 @@ jQuery(function($){
 		<th scope="col">주문일시</th>
 		<th scope="col">주문번호</th>
 		<th scope="col"><input type="checkbox" id="sit_select_all"></th>
-		<th scope="col" colspan="3">주문상품</th>
-		<th scope="col">판매자</th>
+		<th scope="col" colspan="4">주문상품</th>
 		<th scope="col">구매확정</th>
 		<th scope="col">배송정보</th>
 		<th scope="col">배송조회</th>
@@ -306,26 +293,7 @@ jQuery(function($){
 			<label for="chk_0" class="sound_only">[루이까또즈] 우븐 숄 머플러 인디라 와인 SA-2HW362WI</label>
 		</td>
 		<td class="td_imgline"><a href="http://demofran.com/shop/view.php?index_no=21" target="_blank"><img src="http://demofran.com/data/order/2010/20100418280763/thumb-79666_Dqpxzw59F3Pzg9PrtDe9tSmaUCF7tu_30x30.jpg" width="30" height="30"></a></td>
-		<td class="td_itname"><a href="http://demofran.com/admin/goods.php?code=form&w=u&gs_id=21" target="_blank">[루이까또즈] 우븐 숄 머플러 인디라 와인 SA-2HW362WI</a></td>
-		<td><span class="sv_wrap">
-<a href="javascript:void(0);" class="sv_member">AP-100001</a>
-<span class="sv">
-<a href="http://demofran.com/admin/pop_memberform.php?mb_id=tubeweb2" onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
-<a href="http://demofran.com/admin/pop_sellerform.php?mb_id=tubeweb2" onclick="win_open(this,'win_seller','1200','600','yes');return false;">공급사정보수정</a>
-<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb2&name=AP-100001&email=2qyUnKnIk5ilmtHHn9JelaLO" onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-<a href="http://demofran.com/admin/sms/sms_user.php?ph=01022222222" onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2" target="_blank">쇼핑몰로그인</a>
-<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2&lg_type=S" target="_blank">공급사로그인</a>
-</span>
-
-<noscript class="sv_nojs"><span class="sv">
-<a href="http://demofran.com/admin/pop_memberform.php?mb_id=tubeweb2" onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
-<a href="http://demofran.com/admin/pop_sellerform.php?mb_id=tubeweb2" onclick="win_open(this,'win_seller','1200','600','yes');return false;">공급사정보수정</a>
-<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb2&name=AP-100001&email=2qyUnKnIk5ilmtHHn9JelaLO" onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-<a href="http://demofran.com/admin/sms/sms_user.php?ph=01022222222" onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2" target="_blank">쇼핑몰로그인</a>
-<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2&lg_type=S" target="_blank">공급사로그인</a>
-</span>
+		<td class="td_itname" colspan="2"><a href="http://demofran.com/admin/goods.php?code=form&w=u&gs_id=21" target="_blank">[루이까또즈] 우븐 숄 머플러 인디라 와인 SA-2HW362WI</a></td>
 </noscript></span></td>
 		<td><span class="fc_00f">완료</span></td>
 		<td>KGB택배</td>
@@ -370,10 +338,6 @@ jQuery(function($){
 				</tbody>
 	</table>
 </div>
-<div class="local_frm02">
-	<a href="#" id="frmOrderPrint" class="btn_lsmall white"><i class="fa fa-print"></i> 주문서출력</a>
-<a href="#" id="frmOrderExcel" class="btn_lsmall white"><i class="fa fa-file-excel-o"></i> 선택 엑셀저장</a>
-<a href="./order/order_excel.php?code=5" class="btn_lsmall white"><i class="fa fa-file-excel-o"></i> 검색결과 엑셀저장</a></div>
 
 <h2>주문 일괄처리</h2>
 <div class="tbl_frm01">

@@ -96,8 +96,8 @@
 	<thead>
 	<tr>
 		<th scope="col">레벨</th>
-		<th scope="col">레벨명</th>
-		<th scope="col">할인률</th>
+		<th scope="col">등급</th>
+		<th scope="col">할인률(선택)</th>
 		<th scope="col">절삭</th>
 		<th scope="col">비고</th>
 	</tr>
@@ -105,10 +105,10 @@
 	<tbody class="list">
 		<tr class="list0">
 		<td class="bold">
-			Lv.9			<input type="hidden" name="gb_no[0]" value="9">
+			Lv.4			<input type="hidden" name="gb_no[0]" value="4">
 			<input type="hidden" name="chk[]" value="0" checked>
 		</td>
-		<td><input type="text" name="gb_name[0]" value="일반회원" class="frm_input wfull"></td>
+		<td><input type="text" name="gb_name[0]" value="트리니티" class="frm_input wfull"></td>
 		<td>
 			<input type="text" name="gb_sale[0]" value="0" class="frm_input w70">
 			<select name="gb_sale_rate[0]">
@@ -125,14 +125,14 @@
 				<option value="10000">만원 단위절삭</option>
 			</select>
 		</td>
-		<td class="tal">쇼핑몰 이용회원 (최하위)</td>
+		<td class="tal">스페셜리스트</td>
 	</tr>
 		<tr class="list1">
 		<td class="bold">
-			Lv.8			<input type="hidden" name="gb_no[1]" value="8">
+			Lv.3			<input type="hidden" name="gb_no[1]" value="3">
 			<input type="hidden" name="chk[]" value="1" checked>
 		</td>
-		<td><input type="text" name="gb_name[1]" value="우수회원" class="frm_input wfull"></td>
+		<td><input type="text" name="gb_name[1]" value="다이아몬드" class="frm_input wfull"></td>
 		<td>
 			<input type="text" name="gb_sale[1]" value="0" class="frm_input w70">
 			<select name="gb_sale_rate[1]">
@@ -149,14 +149,14 @@
 				<option value="10000">만원 단위절삭</option>
 			</select>
 		</td>
-		<td class="tal">쇼핑몰 이용회원</td>
+		<td class="tal">최상위 고객</td>
 	</tr>
 		<tr class="list0">
 		<td class="bold">
-			Lv.7			<input type="hidden" name="gb_no[2]" value="7">
+			Lv.2			<input type="hidden" name="gb_no[2]" value="2">
 			<input type="hidden" name="chk[]" value="2" checked>
 		</td>
-		<td><input type="text" name="gb_name[2]" value="특별회원" class="frm_input wfull"></td>
+		<td><input type="text" name="gb_name[2]" value="골드" class="frm_input wfull"></td>
 		<td>
 			<input type="text" name="gb_sale[2]" value="0" class="frm_input w70">
 			<select name="gb_sale_rate[2]">
@@ -173,14 +173,14 @@
 				<option value="10000">만원 단위절삭</option>
 			</select>
 		</td>
-		<td class="tal">쇼핑몰 이용회원 (최상위)</td>
+		<td class="tal">상위 고객</td>
 	</tr>
 		<tr class="list1">
 		<td class="bold">
-			Lv.6			<input type="hidden" name="gb_no[3]" value="6">
+			Lv.1			<input type="hidden" name="gb_no[3]" value="1">
 			<input type="hidden" name="chk[]" value="3" checked>
 		</td>
-		<td><input type="text" name="gb_name[3]" value="가맹점" class="frm_input wfull"></td>
+		<td><input type="text" name="gb_name[3]" value="실버" class="frm_input wfull"></td>
 		<td>
 			<input type="text" name="gb_sale[3]" value="0" class="frm_input w70">
 			<select name="gb_sale_rate[3]">
@@ -197,107 +197,11 @@
 				<option value="10000">만원 단위절삭</option>
 			</select>
 		</td>
-		<td class="tal">가맹점 회원 (최하위)</td>
+		<td class="tal">일반 고객</td>
 	</tr>
 		<tr class="list0">
 		<td class="bold">
-			Lv.5			<input type="hidden" name="gb_no[4]" value="5">
-			<input type="hidden" name="chk[]" value="4" checked>
-		</td>
-		<td><input type="text" name="gb_name[4]" value="지점" class="frm_input wfull"></td>
-		<td>
-			<input type="text" name="gb_sale[4]" value="0" class="frm_input w70">
-			<select name="gb_sale_rate[4]">
-				<option value="0" selected="selected">%</option>
-				<option value="1">원</option>
-			</select>
-		</td>
-		<td class="tac">
-			<select name="gb_sale_unit[4]">
-				<option value="0" selected="selected">사용안함</option>
-				<option value="10">십원 단위절삭</option>
-				<option value="100">백원 단위절삭</option>
-				<option value="1000">천원 단위절삭</option>
-				<option value="10000">만원 단위절삭</option>
-			</select>
-		</td>
-		<td class="tal">가맹점 회원</td>
-	</tr>
-		<tr class="list1">
-		<td class="bold">
-			Lv.4			<input type="hidden" name="gb_no[5]" value="4">
-			<input type="hidden" name="chk[]" value="5" checked>
-		</td>
-		<td><input type="text" name="gb_name[5]" value="" class="frm_input wfull"></td>
-		<td>
-			<input type="text" name="gb_sale[5]" value="0" class="frm_input w70">
-			<select name="gb_sale_rate[5]">
-				<option value="0" selected="selected">%</option>
-				<option value="1">원</option>
-			</select>
-		</td>
-		<td class="tac">
-			<select name="gb_sale_unit[5]">
-				<option value="0" selected="selected">사용안함</option>
-				<option value="10">십원 단위절삭</option>
-				<option value="100">백원 단위절삭</option>
-				<option value="1000">천원 단위절삭</option>
-				<option value="10000">만원 단위절삭</option>
-			</select>
-		</td>
-		<td class="tal">가맹점 회원</td>
-	</tr>
-		<tr class="list0">
-		<td class="bold">
-			Lv.3			<input type="hidden" name="gb_no[6]" value="3">
-			<input type="hidden" name="chk[]" value="6" checked>
-		</td>
-		<td><input type="text" name="gb_name[6]" value="" class="frm_input wfull"></td>
-		<td>
-			<input type="text" name="gb_sale[6]" value="0" class="frm_input w70">
-			<select name="gb_sale_rate[6]">
-				<option value="0" selected="selected">%</option>
-				<option value="1">원</option>
-			</select>
-		</td>
-		<td class="tac">
-			<select name="gb_sale_unit[6]">
-				<option value="0" selected="selected">사용안함</option>
-				<option value="10">십원 단위절삭</option>
-				<option value="100">백원 단위절삭</option>
-				<option value="1000">천원 단위절삭</option>
-				<option value="10000">만원 단위절삭</option>
-			</select>
-		</td>
-		<td class="tal">가맹점 회원</td>
-	</tr>
-		<tr class="list1">
-		<td class="bold">
-			Lv.2			<input type="hidden" name="gb_no[7]" value="2">
-			<input type="hidden" name="chk[]" value="7" checked>
-		</td>
-		<td><input type="text" name="gb_name[7]" value="" class="frm_input wfull"></td>
-		<td>
-			<input type="text" name="gb_sale[7]" value="0" class="frm_input w70">
-			<select name="gb_sale_rate[7]">
-				<option value="0" selected="selected">%</option>
-				<option value="1">원</option>
-			</select>
-		</td>
-		<td class="tac">
-			<select name="gb_sale_unit[7]">
-				<option value="0" selected="selected">사용안함</option>
-				<option value="10">십원 단위절삭</option>
-				<option value="100">백원 단위절삭</option>
-				<option value="1000">천원 단위절삭</option>
-				<option value="10000">만원 단위절삭</option>
-			</select>
-		</td>
-		<td class="tal">가맹점 회원 (최상위)</td>
-	</tr>
-		<tr class="list0">
-		<td class="bold">
-			Lv.1			<input type="hidden" name="gb_no[8]" value="1">
+			Lv.0			<input type="hidden" name="gb_no[8]" value="1">
 			<input type="hidden" name="chk[]" value="8" checked>
 		</td>
 		<td><input type="text" name="gb_name[8]" value="관리자" class="frm_input wfull"></td>
@@ -317,7 +221,7 @@
 				<option value="10000">만원 단위절삭</option>
 			</select>
 		</td>
-		<td class="tal">최고 관리자</td>
+		<td class="tal">관리자</td>
 	</tr>
 		</tbody>
 	</table>

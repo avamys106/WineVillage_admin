@@ -16,6 +16,9 @@ form {margin:0;}
 
 /*input_크롬 배경컬러*/
 input:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px white inset;}
+input {
+  margin:3px 5px;
+}
 
 /*placeholder 속성*/
 ::-webkit-input-placeholder {color:#aaa;font-size:12px;letter-spacing:-1px; /*Webkit browsers*/}

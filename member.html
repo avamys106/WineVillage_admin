@@ -156,14 +156,13 @@
 									</td>
 								</tr>
 								<tr>
-									<th scope="row">레벨검색</th>
+									<th scope="row">등급검색</th>
 									<td>
 										<label><input type="radio" name="sst" value="" checked="checked"> 전체</label>
-										<label><input type="radio" name="sst" value="9"> 일반회원</label>
-										<label><input type="radio" name="sst" value="8"> 우수회원</label>
-										<label><input type="radio" name="sst" value="7"> 특별회원</label>
-										<label><input type="radio" name="sst" value="6"> 가맹점</label>
-										<label><input type="radio" name="sst" value="5"> 지점</label>
+										<label><input type="radio" name="sst" value="4"> 트리니티</label>
+										<label><input type="radio" name="sst" value="3"> 다이아몬드</label>
+										<label><input type="radio" name="sst" value="2"> 골드</label>
+										<label><input type="radio" name="sst" value="1"> 실버</label>
 									</td>
 								</tr>
 							</tbody>
@@ -178,7 +177,7 @@
 				<div class="local_ov mart30">
 					총 회원수 : <b class="fc_red">3</b>명
 				</div>
-				<div class="local_frm01">
+				<!-- <div class="local_frm01">
 					<a href="./member.php?code=mail_list" class="btn_lsmall bx-white">전체메일발송</a>
 					<a href="./sms/sms_member.php" onclick="win_open(this,'pop_sms','245','360','no');return false"
 						class="btn_lsmall bx-white">전체문자발송</a>
@@ -186,7 +185,7 @@
 							class="fa fa-file-excel-o"></i> 엑셀저장</a>
 					<a href="./member.php?code=register_form" class="fr btn_lsmall red"><i class="ionicons ion-android-add"></i>
 						회원추가</a>
-				</div>
+				</div> -->
 				<div class="tbl_head01">
 					<table>
 						<colgroup>
@@ -207,7 +206,7 @@
 								<th scope="col">번호</th>
 								<th scope="col"><a href="/admin/member.php?code=list&page=&filed=name&orderby=asc">회원명</a></th>
 								<th scope="col"><a href="/admin/member.php?code=list&page=&filed=id&orderby=asc">아이디</a></th>
-								<th scope="col"><a href="/admin/member.php?code=list&page=&filed=grade&orderby=asc">레벨</a></th>
+								<th scope="col"><a href="/admin/member.php?code=list&page=&filed=grade&orderby=asc">등급</a></th>
 								<th scope="col"><a href="/admin/member.php?code=list&page=&filed=pt_id&orderby=asc">추천인</a></th>
 								<th scope="col">핸드폰</th>
 								<th scope="col"><a href="/admin/member.php?code=list&page=&filed=reg_time&orderby=asc">가입일시</a></th>
@@ -228,9 +227,6 @@
 												onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
 											<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb3&name=%EC%84%B8%EA%B8%80%EB%A7%8C&email=2qyUnKnIk5mlmtHHn9JelaLO"
 												onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-											<a href="http://demofran.com/admin/sms/sms_user.php?ph=01033333333"
-												onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-											<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb3" target="_blank">쇼핑몰로그인</a>
 										</span>
 
 										<noscript class="sv_nojs"><span class="sv">
@@ -238,13 +234,10 @@
 													onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
 												<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb3&name=%EC%84%B8%EA%B8%80%EB%A7%8C&email=2qyUnKnIk5mlmtHHn9JelaLO"
 													onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-												<a href="http://demofran.com/admin/sms/sms_user.php?ph=01033333333"
-													onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-												<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb3" target="_blank">쇼핑몰로그인</a>
 											</span>
 										</noscript></span></td>
 								<td class="tal">tubeweb3</td>
-								<td>일반회원</td>
+								<td>다이아몬드</td>
 								<td class="tal">tubeweb1</td>
 								<td>010-3333-3333</td>
 								<td>2020-10-04 18:05:42</td>
@@ -260,33 +253,19 @@
 										<span class="sv">
 											<a href="http://demofran.com/admin/pop_memberform.php?mb_id=tubeweb2"
 												onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
-											<a href="http://demofran.com/admin/pop_sellerform.php?mb_id=tubeweb2"
-												onclick="win_open(this,'win_seller','1200','600','yes');return false;">공급사정보수정</a>
 											<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb2&name=%EB%91%90%EA%B8%80%EB%A7%8C&email=2qyUnKnIk5ilmtHHn9JelaLO"
 												onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-											<a href="http://demofran.com/admin/sms/sms_user.php?ph=01022222222"
-												onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-											<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2" target="_blank">쇼핑몰로그인</a>
-											<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2&lg_type=S"
-												target="_blank">공급사로그인</a>
 										</span>
 
 										<noscript class="sv_nojs"><span class="sv">
 												<a href="http://demofran.com/admin/pop_memberform.php?mb_id=tubeweb2"
 													onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
-												<a href="http://demofran.com/admin/pop_sellerform.php?mb_id=tubeweb2"
-													onclick="win_open(this,'win_seller','1200','600','yes');return false;">공급사정보수정</a>
 												<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb2&name=%EB%91%90%EA%B8%80%EB%A7%8C&email=2qyUnKnIk5ilmtHHn9JelaLO"
 													onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-												<a href="http://demofran.com/admin/sms/sms_user.php?ph=01022222222"
-													onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-												<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2" target="_blank">쇼핑몰로그인</a>
-												<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb2&lg_type=S"
-													target="_blank">공급사로그인</a>
 											</span>
 										</noscript></span></td>
 								<td class="tal">tubeweb2</td>
-								<td>일반회원</td>
+								<td>실버</td>
 								<td class="tal">admin</td>
 								<td>010-2222-2222</td>
 								<td>2020-10-04 18:05:04</td>
@@ -304,11 +283,6 @@
 												onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
 											<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb1&name=%ED%95%9C%EA%B8%80%EB%A7%8C&email=2qyUnKnIk5elmtHHn9JelaLO"
 												onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-											<a href="http://demofran.com/admin/sms/sms_user.php?ph=01011111111"
-												onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-											<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb1" target="_blank">쇼핑몰로그인</a>
-											<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb1&lg_type=P"
-												target="_blank">가맹점로그인</a>
 										</span>
 
 										<noscript class="sv_nojs"><span class="sv">
@@ -316,15 +290,10 @@
 													onclick="win_open(this,'win_member','1200','600','yes');return false;">회원정보수정</a>
 												<a href="http://demofran.com/admin/formmail.php?mb_id=tubeweb1&name=%ED%95%9C%EA%B8%80%EB%A7%8C&email=2qyUnKnIk5elmtHHn9JelaLO"
 													onclick="win_open(this,'win_email','650','580','no'); return false;">메일보내기</a>
-												<a href="http://demofran.com/admin/sms/sms_user.php?ph=01011111111"
-													onclick="win_open(this,'win_sms','300','360','no'); return false;">SMS보내기</a>
-												<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb1" target="_blank">쇼핑몰로그인</a>
-												<a href="http://demofran.com/admin/admin_ss_login.php?mb_id=tubeweb1&lg_type=P"
-													target="_blank">가맹점로그인</a>
 											</span>
 										</noscript></span></td>
 								<td class="tal">tubeweb1</td>
-								<td>가맹점</td>
+								<td>트리니티</td>
 								<td class="tal">admin</td>
 								<td>010-1111-1111</td>
 								<td>2020-10-04 18:04:17</td>
@@ -336,7 +305,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="local_frm02">
+				<!-- <div class="local_frm02">
 					<a href="./member.php?code=mail_list" class="btn_lsmall bx-white">전체메일발송</a>
 					<a href="./sms/sms_member.php" onclick="win_open(this,'pop_sms','245','360','no');return false"
 						class="btn_lsmall bx-white">전체문자발송</a>
@@ -344,7 +313,7 @@
 							class="fa fa-file-excel-o"></i> 엑셀저장</a>
 					<a href="./member.php?code=register_form" class="fr btn_lsmall red"><i class="ionicons ion-android-add"></i>
 						회원추가</a>
-				</div>
+				</div> -->
 
 
 				<script>

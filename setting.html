@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>관리자 페이지</title>
+<link rel="stylesheet" href="css/admin.css">
+<link type="text/css" href="jquery-ui_style.css?ver=20240415180634">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/common.js?ver=20240415180634"></script>
+<script src="js/categorylist.js?ver=20240415180634"></script>
+</head>
+<body>
+
+	<header id="hd">
+		<div id="hd_wrap">
+			<h1>행복을 주는 쇼핑몰!</h1>
+			<div id="logo"><a href="index.html"><img src="./images/winevillage_logo_inv.png"
+						alt="행복을 주는 쇼핑몰! 관리자"></a></div>
+			<div id="tnb">
+				<ul>
+					<li>오늘:60, 어제:80, 최대:739, 전체:167994</li>
+					<li><a href="index.html">관리자홈</a></li>
+					<li><a href="#" target="_blank">쇼핑몰</a></li>
+					<li id="tnb_logout"><a href="login.html">로그아웃</a></li>
+				</ul>
+			</div>
+
+			<nav id="gnb">
+				<h2>관리자 주메뉴</h2>
+				<ul id="gnb_1dul">
+					<li class="gnb_1dli">
+						<a href="index.html" class="gnb_1da">대시보드</a>
+					</li>
+					<li class="gnb_1dli">
+						<a href="order.html" class="gnb_1da">주문관리</a>
+					</li>
+					<li class="gnb_1dli">
+						<a href="product.html" class="gnb_1da">상품관리</a>
+					</li>
+					<li class="gnb_1dli">
+						<a href="member.html" class="gnb_1da">회원관리</a>
+					</li>
+					<li class="gnb_1dli">
+						<a href="support.html" class="gnb_1da">고객지원</a>
+					</li>
+					<li class="gnb_1dli">
+						<a href="setting.html" class="gnb_1da">환경설정</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="wrapper">
+
+		<div id="snb">
+			<div class="snb_header ico_config">
+				<h2><i class="fa fa-cogs"></i>환경설정</h2>
+			</div>
+			<dl>
+				<dt class="q10 menu_toggle">기본환경설정</dt>
+				<dd class="q10 active">
+					<a href="setting.html">관리자 등록</a>
+				</dd>
+			</dl>
+		</div>
+		<div id="content">
+			<div class="breadcrumb">
+				<span>HOME</span> <i class="ionicons ion-ios-arrow-right"></i> 환경설정 <i class="ionicons ion-ios-arrow-right"></i>
+				관리자 등록
+			</div>
+
+			<div class="s_wrap">
+				<h1>관리자 등록</h1>
+
+				<form name="fregform" method="post" action="./config/super_update.php">
+					<input type="hidden" name="token" value="">
+
+
+					<h2>관리자 정보 입력</h2>
+					<div class="tbl_frm01">
+						<table>
+							<colgroup>
+								<col class="w180">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">관리자 ID</th>
+									<td>
+										<input type="text" name="name" value="" required itemname="관리자id" class="frm_input required">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">비밀번호</th>
+									<td>
+										<input type="password" name="name" value="" required itemname="관리자pass" class="frm_input required">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">비밀번호 확인</th>
+									<td>
+										<input type="password" name="name" value="" required itemname="관리자pass2" class="frm_input required">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">이메일주소</th>
+									<td>
+										<input type="text" name="email" value="admin@demofran.com" required email itemname="이메일"
+											class="frm_input required" size="30">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">핸드폰</th>
+									<td><input type="text" name="cellphone" value="010-0000-0000" required itemname="핸드폰"
+											class="frm_input required"></td>
+								</tr>
+								<!-- <tr>
+									<th scope="row">최후아이피</th>
+									<td>122.39.18.248</td>
+								</tr>
+								<tr>
+									<th scope="row">로그인횟수</th>
+									<td>1,181 회</td>
+								</tr>
+								<tr>
+									<th scope="row">마지막로그인</th>
+									<td>2024-04-16 00:03:34</td>
+								</tr> -->
+							</tbody>
+						</table>
+					</div>
+
+					<div class="btn_confirm">
+						<input type="submit" value="등록" class="btn_large" accesskey="s">
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<div id="ft">
+	</div>
+
+
+	<div id="ajax-loading"><img src="http://demofran.com/img/ajax-loader.gif"></div>
+	<div id="anc_header"><a href="#anc_hd"><span></span>TOP</a></div>
+
+	<script src="http://demofran.com/admin/js/admin.js?ver=20240416175159"></script>
+
+	<script src="http://demofran.com/js/wrest.js"></script>
+</body>
+
+</html>
